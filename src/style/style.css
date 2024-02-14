@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.continer {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.header-block-buton-all {
+    display: flex;
+    gap: 20px;
+}
+
+.header-block-buton-all button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 5px;
+    background-color: inherit;
+    border: none;
+    height: 20px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.header-sorche-option-buton {
+    display: flex;
+}
+
+.header-block-search input {
+    width: 421px;
+    height: 40px;
+    border: 3px solid rgba(13, 110, 253, 1);
+    border-radius: 5px 0 0 5px;
+}
+
+.header-block-option select {
+    width: 145px;
+    height: 40px;
+    border: 3px solid rgba(13, 110, 253, 1);
+    cursor: pointer;
+}
+
+.header-block-buton button {
+    width: 115px;
+    height: 40px;
+    background-color: rgba(13, 110, 253, 1);
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-block-logo {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+
+}
+
+.header-block-buton-all button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header-block-buton-all p {
+    color: rgba(139, 150, 165, 1);
+}
+
+input {
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+
+.header-block-1-all{
+    border: 0.5px solid rgb(206, 211, 217);
+    height: 56px;
+    margin: 10px 0 0 0;
+}
