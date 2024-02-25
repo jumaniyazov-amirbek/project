@@ -1,5 +1,6 @@
 import React from 'react'
 import avatar from '../assets/Avatar.png'
+import wrab from '../assets/Banner-board-800x420 2.png'
 export default function About() {
     return (
         <div className='about-block-all'>
@@ -17,6 +18,9 @@ export default function About() {
                         <a href=""> More category</a>
                     </div>
                     <div className="img-block">
+                       <div className="img-blockk">
+                       <img src={wrab} alt="" />
+                       </div>
                         <p>Latest trending</p>
                         <h1>Electronic items</h1>
                         <button>Learn more</button>

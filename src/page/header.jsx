@@ -5,14 +5,15 @@ import sms from '../assets/sms.png'
 import orders from '../assets/orders.png'
 import my_cart from '../assets/my-cart.png'
 import hamburger from '../assets/hamburger.svg'
+import BtnBurger from './BtnBurger'
 export default function header() {
     return (
 
         <div className='header-block-all'>
             <div className="continer">
                 <div className="header-block">
-
                     <div className="header-logo-img">
+
                         <button className="header-block-logo">
                             <img className='hamburger' src={hamburger} alt="" />
                         </button>
@@ -68,18 +69,18 @@ export default function header() {
                 </div>
 
             </div>
-            <div className="header-block-1-all">
+            <div className="header-block-1-all"> <div className="header-block-1-hamburger">
+                <button>
+                    <BtnBurger />
+                </button>
+            </div>
                 <div className="continer">
                     <div className="header-block-1">
                         <div className="header-block-1-hamburger-link-option">
                             <div className="header-block-1-hamburger-link">
-                                <div className="header-block-1-hamburger">
-                                    <button>
-                                        <img src={hamburger} alt="" />
-                                        <p>All category</p>
-                                    </button>
-                                </div>
+
                                 <div className="header-block-1-link">
+                                    <a href=""> All category</a>
                                     <a href="">Hot offers</a>
                                     <a href="">Gift boxes</a>
                                     <a href="">Projects</a>
@@ -116,8 +117,8 @@ export default function header() {
                     </div>
 
                 </div>
-            </div>      
-             <div className="button-block-all">
+            </div>
+            <div className="button-block-all">
                 <button>
                     All category
                 </button>
