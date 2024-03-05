@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(247, 248, 249);
+
 }
 
 .continer {
@@ -194,12 +195,12 @@ input {
     display: flex;
 }
 
-.about-block-link {
+
+.about-block-link{
     display: flex;
     flex-direction: column;
 }
-
-.about-block-link a {
+.about-block-link a{
     width: 250px;
     height: 40px;
     text-decoration: none;
@@ -246,39 +247,66 @@ input {
     padding: 10px 15px;
     border-radius: 5px;
     position: relative;
+transition: all 0.5s;
+color: rgb(88, 89, 90);
+}
+.about-block-link a:hover{
+background-color: #DEE2E7;
+color: #000;
+}
+.img-block{
+    width: 665px;
+    height: 360px;
+    background-image: url(../assets/Banner-board-800x420\ 2.png);
+border: #000 1px solid;
+padding: 40px;
+margin: 0 20px;
+}
+.img-block p{
+font-size: 28px;
+font-family: sans-serif;
+}
+.img-block h1{
+font-size: 32px;
+font-family: sans-serif;
+font-weight: 600;
+}
+.img-block button{
+    padding: 10px 15px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     background-color: #fff;
     margin: 20px 0 0 0;
 }
 
-.about-block-button-2 {
+.about-block-button-2{
     width: 200px;
     height: 95px;
-    padding: 15px 10px;
+    padding: 15px 10px ;
     background-color: rgba(243, 131, 50, 1);
     color: #fff;
     border-radius: 5px;
     font-family: sans-serif;
 }
 
-.about-block-button-3 {
+.about-block-button-3{
     width: 200px;
     height: 95px;
-    padding: 15px 10px;
+    padding: 15px 10px ;
     background-color: rgba(85, 189, 195, 1);
     color: #fff;
     border-radius: 5px;
     font-family: sans-serif;
 }
 
-.about-block-button {
+.about-block-button{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.about-block-button-1 {
+.about-block-button-1{
     width: 200px;
     height: 150px;
     background-color: rgba(227, 240, 255, 1);
@@ -292,7 +320,7 @@ input {
     padding: 10px 0;
 }
 
-.Join {
+.Join{
     width: 180px;
     height: 30px;
     background-color: rgba(18, 127, 255, 1);
@@ -301,16 +329,15 @@ input {
     border-radius: 5px;
 }
 
-.Log {
+.Log{
     width: 180px;
     height: 30px;
     background-color: #fff;
-    color: rgba(18, 127, 255, 1);
+    color:  rgba(18, 127, 255, 1);
     border: 1px solid #DEE2E7;
     border-radius: 5px;
 }
-
-.about-block-button_button {
+.about-block-button_button{
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -975,6 +1002,16 @@ input {
         color: #8B96A5;
     }
 
+.about-block-button-img-text{
+    display: flex;
+    gap: 10px;
+}
+.about-block-button-img-text p{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*  */
+@media screen and (max-width:360px) {
     .hamburger {
         display: block;
     }
@@ -1069,5 +1106,30 @@ input {
 
     .header-block-1 {
         display: none;
+    }
+}
+    .header-sorche-option-buton {
+        display: none;
+    }
+
+    .header-block-buton-all {
+        display: none;
+    }
+
+    .header-block-1 {
+        display: none;
+    }
+
+    .sorche-input {
+        display: block;
+    }
+
+    .sorche-input input {
+        width: 330px;
+        height: 40px;
+        border-radius: 5px;
+        background: linear-gradient(0deg, #F7FAFC, #F7FAFC),
+            linear-gradient(0deg, #DEE2E7, #DEE2E7);
+        border: 1px solid #DEE2E7;
     }
 }

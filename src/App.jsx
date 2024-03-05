@@ -23,7 +23,6 @@ function App() {
       <SuppliersByRegion/>
       <FootreMini/>
       <Footre/>
-    
     </>
   )
 }

@@ -53,6 +53,28 @@ export default function About() {
                     <h1>Electronic items</h1>
                     <button>Learn more</button>
                 </div>
+<div className="about-block-button-1">
+    <div className="about-block-button-img-text">
+        <img src={avatar} alt="" />
+        <p>Hi, user <br />  let’s get stated</p>
+    </div>
+    <div className="about-block-button_button">
+        <button className='Join'>Join now</button>
+        <button className='Log'>Log in</button>
+    </div>
+</div>
+<div className="about-block-button-2">
+    <p>Get US $10 off <br />
+     with a new <br />
+         supplier</p>
+</div>
+<div className="about-block-button-3">
+    <p>Send quotes with <br />
+     supplier <br />
+      preferences</p>
+</div>
+                    </div>
+                </div>
             </div>
         </div>
     )

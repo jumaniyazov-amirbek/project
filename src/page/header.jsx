@@ -18,6 +18,9 @@ export default function header() {
                             <img className='hamburger' src={hamburger} alt="" />
                         </button>
                         <button className="header-block-logo">
+                            <img className='hamburger' src={hamburger} alt="" />
+                        </button>
+                        <button className="header-block-logo">
                             <img src={logo} alt="" />
                         </button>
                     </div>
@@ -65,6 +68,12 @@ export default function header() {
                             <img src={pirofil} alt="" />
 
                         </button>
+
+                        </button>
+                        <button>
+                            <img src={pirofil} alt="" />
+
+                        </button>
                     </div>
                 </div>
 
@@ -81,6 +90,13 @@ export default function header() {
 
                                 <div className="header-block-1-link">
                                     <a href=""> All category</a>
+                                <div className="header-block-1-hamburger">
+                                    <button>
+                                        <img src={hamburger} alt="" />
+                                        <p>All category</p>
+                                    </button>
+                                </div>
+                                <div className="header-block-1-link">
                                     <a href="">Hot offers</a>
                                     <a href="">Gift boxes</a>
                                     <a href="">Projects</a>
