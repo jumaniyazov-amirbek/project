@@ -5,14 +5,18 @@ import sms from '../assets/sms.png'
 import orders from '../assets/orders.png'
 import my_cart from '../assets/my-cart.png'
 import hamburger from '../assets/hamburger.svg'
+import BtnBurger from './BtnBurger'
 export default function header() {
     return (
 
         <div className='header-block-all'>
             <div className="continer">
                 <div className="header-block">
-
                     <div className="header-logo-img">
+
+                        <button className="header-block-logo">
+                            <img className='hamburger' src={hamburger} alt="" />
+                        </button>
                         <button className="header-block-logo">
                             <img className='hamburger' src={hamburger} alt="" />
                         </button>
@@ -64,15 +68,28 @@ export default function header() {
                             <img src={pirofil} alt="" />
 
                         </button>
+
+                        </button>
+                        <button>
+                            <img src={pirofil} alt="" />
+
+                        </button>
                     </div>
                 </div>
 
             </div>
-            <div className="header-block-1-all">
+            <div className="header-block-1-all"> <div className="header-block-1-hamburger">
+                <button>
+                    <BtnBurger />
+                </button>
+            </div>
                 <div className="continer">
                     <div className="header-block-1">
                         <div className="header-block-1-hamburger-link-option">
                             <div className="header-block-1-hamburger-link">
+
+                                <div className="header-block-1-link">
+                                    <a href=""> All category</a>
                                 <div className="header-block-1-hamburger">
                                     <button>
                                         <img src={hamburger} alt="" />
@@ -114,7 +131,22 @@ export default function header() {
                     <div className="sorche-input">
                         <input placeholder='Search' type="text" />
                     </div>
+
                 </div>
+            </div>
+            <div className="button-block-all">
+                <button>
+                    All category
+                </button>
+                <button>
+                    Gadgets
+                </button>
+                <button>
+                    Clocthes
+                </button>
+                <button>
+                    Accessory
+                </button>
             </div>
         </div>
 
