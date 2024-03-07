@@ -4,7 +4,5 @@ import App from './App.jsx'
 import './style/style.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
     <App />
-  
 )
