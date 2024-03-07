@@ -25,6 +25,7 @@ export default function RecommendedItems() {
                                 <h1>$10.30</h1>
                                 <p>T-shirts with multiple <br />
                                     colors, for men</p>
+
                             </div>
                         </div>
                         <div className="RecommendedItems-block-mini">

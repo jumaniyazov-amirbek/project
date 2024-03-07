@@ -1,5 +1,5 @@
 import About from './page/About'
-import Header from './page/header'
+import Header from './page/Header'
 import Smartphone_icon from './page/smartphone_icon'
 import Pratucts from './page/pratucts'
 import Pratuctss from './page/pratuctss'

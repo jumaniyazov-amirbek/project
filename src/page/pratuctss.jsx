@@ -1,5 +1,4 @@
 import React from 'react'
-import Group from '../assets/Group 969.png'
 import toqiz from '../assets/9.png'
 import on from '../assets/10.png'
 import onbir from '../assets/11.png'
