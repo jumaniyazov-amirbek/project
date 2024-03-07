@@ -56,7 +56,7 @@ export default function About() {
 <div className="about-block-button-1">
     <div className="about-block-button-img-text">
         <img src={avatar} alt="" />
-        <p>Hi, user <br />  let’s get stated</p>
+        <p>Hi, user <br /> lets get stated</p>
     </div>
     <div className="about-block-button_button">
         <button className='Join'>Join now</button>
@@ -75,7 +75,6 @@ export default function About() {
 </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                
     )
 }
