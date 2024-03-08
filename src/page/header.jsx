@@ -1,11 +1,14 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import logo from "../assets/logo-colored.png";
-import sms from "../assets/sms.png";
-import orders from "../assets/orders.png";
 import my_cart from "../assets/my-cart.png";
 import hamburger from "../assets/hamburger.svg";
 import profil from "../assets/pirofil.png";
 import BtnBurger from "./BtnBurger";
+import Profile from "../components/headerfle/Profile";
+import Message from "../components/headerfle/Message";
+import Orders from "../components/headerfle/Orders";
+import Product from "../components/headerfle/product";
 export default function header() {
     return (
         <div>
@@ -28,7 +31,7 @@ export default function header() {
                                 />
                             </button>
                             <button className="header-block-logo">
-                                <img src={logo} alt="" />
+                              <a href="app">  <img src={logo} alt="" /></a>
                             </button>
                         </div>
                         <div className="header-sorche-option-buton">
@@ -45,22 +48,21 @@ export default function header() {
                             </div>
                         </div>
                         <div className="header-block-buton-all">
-                            <button>
-                                <img src={profil} alt="" />
-                                <p>Profile</p>
-                            </button>
-                            <button>
-                                <img src={sms} alt="" />
-                                <p>Message</p>
-                            </button>
-                            <button>
-                                <img src={orders} alt="" />
-                                <p>Orders</p>
-                            </button>
-                            <button>
-                                <img src={my_cart} alt="" />
-                                <p>My cart</p>
-                            </button>
+                            <BrowserRouter>
+                                <nav className="navlink">
+                                    <Link to="/">Profile</Link>
+                                    <Link to="/Message">Message</Link>
+                                    <Link to="/Orders">Orders</Link>
+                                    <Link to="/Product">Product</Link>
+                                </nav>
+                                <Routes>
+                                    <Route path="/" element={<Profile />} />
+                                    <Route path="/message" element={<Message />} />
+                                    <Route path="/orders" element={<Orders />} />
+                                    <Route path="/product" element={<Product />} />
+
+                                </Routes>
+                            </BrowserRouter>
                         </div>
                         <div className="buton-block">
                             <button>

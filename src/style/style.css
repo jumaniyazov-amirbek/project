@@ -986,7 +986,7 @@ input {
 .blockdivv {
     z-index: 999;
     position: absolute;
-    width: 1410px;
+    width: 1405px;
     height: 100%;
     background-color: #ffffff;
     display: flex;
@@ -1121,8 +1121,24 @@ input {
     align-items: center;
     justify-content: center;
 }
+.Profile-block-all{
+    background-color: #fff;
+    width: 1000%;
+    position: absolute;
+    z-index: 1000;
+    height: 1000%;
+    margin: 100px 0 0 -1100px;
+}
+.navlink a{
+    text-decoration: none;
+    color: #8b96a5;
+    font-family: sans-serif;
+}
+.navlink{
+    display: flex;
+    gap: 5px;
+}
 /*  */
-
 @media screen and (max-width: 360px) {
     .button-block-all {
         display: flex;
