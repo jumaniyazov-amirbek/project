@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { Route, Link } from "react-router-dom";
 import logo from "../assets/logo-colored.png";
 import my_cart from "../assets/my-cart.png";
 import hamburger from "../assets/hamburger.svg";
 import profil from "../assets/pirofil.png";
 import BtnBurger from "./BtnBurger";
-import Messag from '../assets/sms.png'
-import Order from '../assets/orders.png'
+import Messag from "../assets/sms.png";
+import Order from "../assets/orders.png";
 import Profile from "../components/headerfle/Profile";
 import Message from "../components/headerfle/Message";
 import Orders from "../components/headerfle/Orders";
@@ -33,7 +33,9 @@ export default function header() {
                                 />
                             </button>
                             <button className="header-block-logo">
-                                <a href="app">  <img src={logo} alt="" /></a>
+                                <Link to={"/"}>
+                                    <img src={logo} alt="" />
+                                </Link>
                             </button>
                         </div>
                         <div className="header-sorche-option-buton">
@@ -50,21 +52,24 @@ export default function header() {
                             </div>
                         </div>
                         <div className="header-block-buton-all">
-                            <BrowserRouter>
-                                <nav className="navlink">
-                                    <Link to="/"> <img src={profil} alt="" />Profile</Link>
-                                    <Link to="/Message"> <img src={Messag} alt="" />Message</Link>
-                                    <Link to="/Orders"> <img src={Order} alt="" />Orders</Link>
-                                    <Link to="/Product"> <img src={my_cart} alt="" />Product</Link>
-                                </nav>
-                                <Routes>
-                                    <Route path="/" element={<Profile />} />
-                                    <Route path="/message" element={<Message />} />
-                                    <Route path="/orders" element={<Orders />} />
-                                    <Route path="/product" element={<Product />} />
-
-                                </Routes>
-                            </BrowserRouter>
+                            <nav className="navlink">
+                                <Link to="/">
+                                    <img src={profil} alt="" />
+                                    Profile
+                                </Link>
+                                <Link to="/message">
+                                    <img src={Messag} alt="" />
+                                    Message
+                                </Link>
+                                <Link to="/orders">
+                                    <img src={Order} alt="" />
+                                    Orders
+                                </Link>
+                                <Link to="/product">
+                                    <img src={my_cart} alt="" />
+                                    Product
+                                </Link>
+                            </nav>
                         </div>
                         <div className="buton-block">
                             <button>

@@ -9,7 +9,7 @@ import besh from '../assets/5.png'
 import olti from '../assets/6.png'
 import yetti from '../assets/7.png'
 import sakiz from '../assets/8.png'
-export default function pratucts() {
+export default function Pratucts() {
     return (
         <div className="pratucts-block-alll">
             <div className='pratucts-block-all'>

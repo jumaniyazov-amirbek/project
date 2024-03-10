@@ -1,29 +1,26 @@
-import About from "./page/About";
 import Header from "./page/header";
-import Smartphone_icon from "./page/smartphone_icon";
-import Pratucts from "./page/pratucts";
-import Pratuctss from "./page/pratuctss";
-import AnEasyWayToSend from "./page/AnEasyWayToSend";
-import RecommendedItems from "./page/RecommendedItems";
-import OurExtraServices from "./page/OurExtraServices";
-import SuppliersByRegion from "./page/SuppliersByRegion";
+
 import FootreMini from "./page/FootreMini";
 import Footre from "./page/Footre";
+import { Route, Routes } from "react-router-dom";
+import Home from "./page/Home";
+import RecommendedItemsMini from "./page/RecommendedItems/RecommendedItemsMini";
 function App() {
     return (
-        <>
-            <Header />
-            <About />
-            <Smartphone_icon />
-            <Pratucts />
-            <Pratuctss />
-            <AnEasyWayToSend />
-            <RecommendedItems />
-            <OurExtraServices />
-            <SuppliersByRegion />
-            <FootreMini />
-            <Footre />
-        </>
+        <div className="Home">
+            <div className="container">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route
+                        path="/product/:id"
+                        element={<RecommendedItemsMini />}
+                    />
+                </Routes>
+                <FootreMini />
+                <Footre />
+            </div>
+        </div>
     );
 }
 

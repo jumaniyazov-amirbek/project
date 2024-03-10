@@ -4,7 +4,7 @@ import box_2 from '../assets/box-2.svg'
 import box_3 from '../assets/box-3.png'
 import box_4 from '../assets/box-4.svg'
 import box_5 from '../assets/box-5.svg'
-export default function smartphone_icon() {
+export default function Smartphone() {
     return (
         <div className='smartphone_icon-block-all'>
             <div className="continer">

@@ -8,7 +8,7 @@ import ontort from '../assets/14.png'
 import onbesh from '../assets/15.png'
 import onolti from '../assets/16.png'
 import onyetti from '../assets/17.png.png'
-export default function pratuctss() {
+export default function Pratuctss() {
     return (
         <div className="pratucts-block-alll">
             <div className='pratucts-block-all'>
