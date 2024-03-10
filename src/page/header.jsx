@@ -5,6 +5,8 @@ import my_cart from "../assets/my-cart.png";
 import hamburger from "../assets/hamburger.svg";
 import profil from "../assets/pirofil.png";
 import BtnBurger from "./BtnBurger";
+import Messag from '../assets/sms.png'
+import Order from '../assets/orders.png'
 import Profile from "../components/headerfle/Profile";
 import Message from "../components/headerfle/Message";
 import Orders from "../components/headerfle/Orders";
@@ -31,7 +33,7 @@ export default function header() {
                                 />
                             </button>
                             <button className="header-block-logo">
-                              <a href="app">  <img src={logo} alt="" /></a>
+                                <a href="app">  <img src={logo} alt="" /></a>
                             </button>
                         </div>
                         <div className="header-sorche-option-buton">
@@ -50,10 +52,10 @@ export default function header() {
                         <div className="header-block-buton-all">
                             <BrowserRouter>
                                 <nav className="navlink">
-                                    <Link to="/">Profile</Link>
-                                    <Link to="/Message">Message</Link>
-                                    <Link to="/Orders">Orders</Link>
-                                    <Link to="/Product">Product</Link>
+                                    <Link to="/"> <img src={profil} alt="" />Profile</Link>
+                                    <Link to="/Message"> <img src={Messag} alt="" />Message</Link>
+                                    <Link to="/Orders"> <img src={Order} alt="" />Orders</Link>
+                                    <Link to="/Product"> <img src={my_cart} alt="" />Product</Link>
                                 </nav>
                                 <Routes>
                                     <Route path="/" element={<Profile />} />

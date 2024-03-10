@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import clothes_1 from '../assets/clothes-1.png'
 import clothes_2 from '../assets/clothes-2.png'
 import clothes_3 from '../assets/clothes-3.png'
@@ -8,6 +9,8 @@ import clothes_6 from '../assets/clothes-6.png'
 import clothes_7 from '../assets/clothes-7.png'
 import clothes_8 from '../assets/clothes-8.png'
 import clothes_10 from '../assets/clothes-10.png'
+import RecommendedItemsMini from './RecommendedItems/RecommendedItemsMini'
+import RecommendedItemsMiniOne from './RecommendedItems/RecommendedItemsMiniOne'
 export default function RecommendedItems() {
     return (
         <div className='RecommendedItems-block-all'>
@@ -17,56 +20,67 @@ export default function RecommendedItems() {
                 </div>
                 <div className="blok-all">
                     <div className="RecommendedItems-block">
-                        <div className="RecommendedItems-block-mini">
-                            <div className="RecommendedItems-block-mini-img">
-                                <img src={clothes_1} alt="" />
-                            </div>
-                            <div className="RecommendedItems-block-mini-text">
-                                <h1>$10.30</h1>
-                                <p>T-shirts with multiple <br />
-                                    colors, for men</p>
+                        <BrowserRouter>
+                            <nav>
+                                <Link to="/RecommendedItemsMini">   <div className="RecommendedItems-block-mini">
+                                    <div className="RecommendedItems-block-mini-img">
+                                        <img src={clothes_1} alt="" />
+                                    </div>
+                                    <div className="RecommendedItems-block-mini-text">
+                                        <h1>$10.30</h1>
+                                        <p>T-shirts with multiple <br />
+                                            colors, for men</p>
 
-                            </div>
-                        </div>
-                        <div className="RecommendedItems-block-mini">
-                            <div className="RecommendedItems-block-mini-img">
-                                <img src={clothes_2} alt="" />
-                            </div>
-                            <div className="RecommendedItems-block-mini-text">
-                                <h1>$10.30</h1>
-                                <p>Jeans shorts for men <br /> blue color</p>
-                            </div>
-                        </div>
-                        <div className="RecommendedItems-block-mini">
-                            <div className="RecommendedItems-block-mini-img">
-                                <img src={clothes_3} alt="" />
-                            </div>
-                            <div className="RecommendedItems-block-mini-text">
-                                <h1>$12.50</h1>
-                                <p>Brown winter coat <br /> medium size</p>
-                            </div>
-                        </div>
-                        <div className="RecommendedItems-block-mini">
-                            <div className="RecommendedItems-block-mini-img">
-                                <img src={clothes_4} alt="" />
-                            </div>
-                            <div className="RecommendedItems-block-mini-text">
-                                <h1>$34.00</h1>
-                                <p>Jeans bag for travel <br />for men</p>
-                            </div>
-                        </div>
-                        <div className="RecommendedItems-block-mini">
-                            <div className="RecommendedItems-block-mini-img">
-                                <img src={clothes_5} alt="" />
-                            </div>
-                            <div className="RecommendedItems-block-mini-text">
-                                <h1>$99.00</h1>
-                                <p>Leather wallet</p>
-                            </div>
-                        </div>
+                                    </div>
+                                </div>
+                                </Link>
+                                <Link to="/RecommendedItemsMiniOne">
+                                    <div className="RecommendedItems-block-mini">
+                                        <div className="RecommendedItems-block-mini-img">
+                                            <img src={clothes_2} alt="" />
+                                        </div>
+                                        <div className="RecommendedItems-block-mini-text">
+                                            <h1>$10.30</h1>
+                                            <p>Jeans shorts for men <br /> blue color</p>
+                                        </div>
+                                    </div>
+                                </Link>
+
+                                <div className="RecommendedItems-block-mini">
+                                    <div className="RecommendedItems-block-mini-img">
+                                        <img src={clothes_3} alt="" />
+                                    </div>
+                                    <div className="RecommendedItems-block-mini-text">
+                                        <h1>$12.50</h1>
+                                        <p>Brown winter coat <br /> medium size</p>
+                                    </div>
+                                </div>
+                                <div className="RecommendedItems-block-mini">
+                                    <div className="RecommendedItems-block-mini-img">
+                                        <img src={clothes_4} alt="" />
+                                    </div>
+                                    <div className="RecommendedItems-block-mini-text">
+                                        <h1>$34.00</h1>
+                                        <p>Jeans bag for travel <br />for men</p>
+                                    </div>
+                                </div>
+                                <div className="RecommendedItems-block-mini">
+                                    <div className="RecommendedItems-block-mini-img">
+                                        <img src={clothes_5} alt="" />
+                                    </div>
+                                    <div className="RecommendedItems-block-mini-text">
+                                        <h1>$99.00</h1>
+                                        <p>Leather wallet</p>
+                                    </div>
+                                </div>
+                            </nav>
+                            <Routes>
+                                <Route path="/RecommendedItemsMini" element={<RecommendedItemsMini />} />
+                                <Route path="/RecommendedItemsMiniOne" element={<RecommendedItemsMiniOne />} />
+                            </Routes>
+                        </BrowserRouter>
+
                     </div>
-
-
                     <div className="RecommendedItems-block">
                         <div className="RecommendedItems-block-mini">
                             <div className="RecommendedItems-block-mini-img">
